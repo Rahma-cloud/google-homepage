@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <style>
+        *{ padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family:arial, sans-serif;}
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height:100vh;
+            background-color: #fff;
+        }
+        nav {
+            display: flex; 
+            align-items: center;
+            justify-content: flex-end;
+            margin-right:30px;
+            margin-top: 14px;
+            }
+        
+        nav a {
+            font-size: 13px;
+            display:inline-block;
+            line-height: 24px;
+            font-weight: 400;
+            color: rgb(0,0,0, 0.87);
+            cursor:pointer;
+            padding: 0px 4px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+            opacity: .85;
+
+        }
+        nav img {width: 34px;
+            padding: 5px;
+            margin: auto 7px;
+            cursor: pointer;}
+        
+        section{
+            flex: 1;
+        }
+
+        .center{display: block;
+                margin: 0px auto;
+                margin-top:107px;
+                justify-content: contain;
+                } 
+        
+        .s-box {
+            width: 580px;
+            margin: 0px auto;
+            position: relative;
+            margin-top: -8px; 
+            text-align: center;
+            }
+        .s-box .input-field {
+            display:block;
+            border: 1px solid rgb(160, 155, 155);
+            color:  rgba(0,0,0, 0.87)
+            font-size: 16px;
+            padding: 13px;
+            padding-left: 45px;
+            border-radius: 25px;
+            width: 100%;
+            transition: box-shadow 100ms;
+            outline: none;
+            }
+        
+        .s-box #mic-icon{
+            width: 20px;
+            opacity: .4;
+            position: absolute;
+            top: 13px;
+            right: 14px;
+
+            }
+        .s-box #search-icon{
+            width: 20px;
+            opacity: .4;
+            position: absolute;
+            top: 13px;
+            left: 14px;   
+            }
+        .button{
+            border: 1px solid transparent;
+            padding: 9px 15px;
+            color: #666;
+            font-size: 14px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 28px;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 100ms;
+            }
+       
+        .button:hover{
+            border: 1px solid #aaa;
+            }
+        
+        .section-2{
+            margin-top: 30px;
+            text-align:center;
+            font-size: 13px;
+            color: black;
+            }
+
+        .section-2 a {
+            margin-left: 5px;
+            color: #1a0dab;
+            }
+        .section-2 a:hover{
+            text-decoration: underline;
+            }
+        footer{
+            background:#f2f2f2;
+            margin-top: 200px;
+            }
+        footer h4{
+            line-height: 39.5px;
+            color:rgb(0,0,0, 0.54);
+            font-size: 15px;
+            font-weight: 400px;
+            padding-left: 28px;
+            border: 1px solid #eee;
+            }
+        footer a{
+            display:inline-block; 
+            padding: 12px 11.3px;
+            color: #5f6368;
+            font-size: 14px;
+            }
+        footer a:hover{
+            text-decoration: underline;
+            }
+        .links {
+            border-top: 1px solid #ddd;
+            display: flex;
+        }
+        .link-1 {
+            padding-left: 18.7px;
+            flex: 1;
+        }
+        .link-2 {
+            padding-right: 18.7px;
+            }
+
+    </style>
+</head>
+
+<body>
+        <nav>        
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+         <img class="side"src="https://lh3.googleusercontent.com/ogw/ADea4I49oqqRqLomjI-oljib2RclKa8sz7aHA94ehcVv=s64-c-mo"alt=gmail-logo>
+            <i class="material-icons">apps</i>
+        </nav>
+        <section class="section-1">
+            <img  class="center" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt=google-logo>
+
+           <form><br><br> 
+                <div class= "s-box">
+                <i class="material-icons" id= "search-icon">search</i>
+                <i class="material-icons" id= "mic-icon">mic</i>
+                <input class="input-field" type="text">
+                <button type="button" class="button">Google Search</button>
+                <button type="button" class="button"> I'm feeling lucky</button>
+                </div>
+           </form>
+            <div class="section-2">
+                <p> Google offered in:
+                    <a href="#">Hausa</a>
+                    <a href="#">Igbo</a>
+                    <a href="#"> Ede yoruba</a>
+                    <a href="#">Nigerian Pidgin</a>
+            
+                </p>
+            </div>
+           
+         </section>    
+    
+    <footer>
+        <h4> Nigeria </h4>
+        <div class= "links">
+            <div class="link-1">
+            <a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How search works</a></div>
+            <div class="link-2">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+            <div>
+        </div>
+    </footer>
+</body>
+</html>
